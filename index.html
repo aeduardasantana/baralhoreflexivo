@@ -1,0 +1,34 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Baralho Reflexivo - Intervenção Psicoterapêutica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Baralho Reflexivo</h1>
+    <p>Escolha uma categoria e revele uma carta com uma frase inspiradora para reflexão psicoterapêutica.</p>
+  </header>
+  <main>
+    <section id="category-selector">
+      <label for="category">Selecione uma categoria:</label>
+      <select id="category"></select>
+    </section>
+    <section id="deck-section">
+      <button id="draw-card-btn">Revelar Carta</button>
+      <div id="card" class="card hidden">
+        <div id="card-text"></div>
+      </div>
+    </section>
+    <section id="history-section">
+      <h2>Histórico de Cartas Reveladas</h2>
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>Para uso em sessões psicoterapêuticas &middot; Desenvolvido por IA</p>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

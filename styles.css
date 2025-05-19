@@ -1,0 +1,146 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f8fa;
+  color: #184a5a;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  background: #4bb9aa;
+  color: #fff;
+  padding: 1rem 0 0.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px #0001;
+}
+
+header h1 {
+  margin: 0.2em 0 0.1em 0;
+  font-weight: 700;
+}
+
+main {
+  max-width: 480px;
+  background: #fff;
+  margin: 2rem auto;
+  border-radius: 18px;
+  box-shadow: 2px 4px 24px #46c9bb22;
+  padding: 2rem 1.2rem 2rem 1.2rem;
+}
+
+#category-selector {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#category {
+  font-size: 1.1em;
+  padding: 0.4em 1em;
+  border-radius: 6px;
+  border: 1px solid #4bb9aa;
+  background: #e9f7f5;
+  color: #184a5a;
+  margin-left: 0.8em;
+}
+
+#deck-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#draw-card-btn {
+  font-size: 1.1em;
+  background: #4bb9aa;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em 2.6em;
+  margin-bottom: 1.2em;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#draw-card-btn:active {
+  background: #18836e;
+}
+
+.card {
+  min-height: 130px;
+  max-width: 350px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #e9f7f5 80%, #b9f2de 108%);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px #46c9bb33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+  color: #0f5247;
+  padding: 1.3em;
+  transition: opacity 0.7s;
+  opacity: 1;
+  margin-bottom: 1.2em;
+  min-width: 230px;
+  border: 1.2px solid #43bda9;
+}
+
+.card.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#card-text {
+  word-break: break-word;
+  text-align: center;
+  font-style: italic;
+}
+
+#history-section {
+  border-top: 1px solid #eee;
+  margin-top: 2.2em;
+  padding-top: 1.2em;
+}
+
+#history-section h2 {
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 0.7em;
+  color: #184a5ac5;
+}
+
+#history-list {
+  font-size: 0.97em;
+  color: #184a5ad9;
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+#history-list li {
+  margin-bottom: 0.4em;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.95em;
+  color: #338276bb;
+  margin-top: 1em;
+  padding-bottom: 1.7em;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.2rem 1.5rem 0.2rem;
+    margin: 0.6rem;
+    min-width: unset;
+  }
+  #card {
+    font-size: 1em;
+    padding: 1em;
+    min-width: unset;
+  }
+}
+
